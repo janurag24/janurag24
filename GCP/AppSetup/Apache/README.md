@@ -26,4 +26,4 @@ $ sudo systemctl status apache2
 
 ## Step 3 — Setup Firewall
 
-<<TBD>>
+...
