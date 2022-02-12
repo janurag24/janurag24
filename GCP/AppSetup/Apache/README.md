@@ -34,7 +34,7 @@ $ ps -ef | grep apache2
 
 ...
 
-## Step 4 — Stop Apache Service
+## Step 4 — Stop Apache 
 
 To check whether process is running or not
 ```sh
@@ -46,3 +46,38 @@ If Apache process is running, stop the process by
 ```sh
 $ sudo systemctl stop apache2
 ```
+
+## Step 5 — Managing Apache process
+
+To stop your web server, type:
+```sh
+sudo systemctl stop apache2
+```
+
+To start the web server when it is stopped, type:
+```sh
+sudo systemctl start apache2
+```
+
+To stop and then start the service again, type:
+```sh
+sudo systemctl restart apache2
+```
+
+If you are simply making configuration changes, Apache can often reload without dropping connections. To do this, use this command:
+```sh
+sudo systemctl reload apache2
+```
+
+By default, Apache is configured to start automatically when the server boots. If this is not what you want, disable this behavior by typing:
+```sh
+sudo systemctl disable apache2
+```
+
+To re-enable the service to start up at boot, type:
+```sh
+sudo systemctl enable apache2
+```
+
+Source - https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-debian-9
+
