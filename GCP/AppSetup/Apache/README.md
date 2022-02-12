@@ -24,6 +24,25 @@ Once installation is completed, OS starts apache2. The web server should be runn
 $ sudo systemctl status apache2
 ```
 
+To check whether process is running or not
+```sh
+$ ps -ef | grep apache2
+```
+
+
 ## Step 3 — Setup Firewall
 
 ...
+
+## Step 4 — Stop Apache Service
+
+To check whether process is running or not
+```sh
+$ ps -ef | grep apache2
+```
+
+If Apache process is running, stop the process by
+
+```sh
+$ sudo systemctl stop apache2
+```
