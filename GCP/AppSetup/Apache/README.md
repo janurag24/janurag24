@@ -1,4 +1,4 @@
-# Installing Apache
+# Apache Installation
 
 ## Step 1 — Installing Apache
 
