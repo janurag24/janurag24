@@ -1,4 +1,4 @@
-# Apache Installation
+# Apache Installation Guide
 
 ## Step 1 — Installing Apache
 
@@ -29,6 +29,10 @@ To check whether process is running or not
 $ ps -ef | grep apache2
 ```
 
+To overwrite the Apache web server default web page
+```sh
+$ echo '<!doctype html><html><body><h1>Hello World!</h1></body></html>' | sudo tee /var/www/html/index.html
+```
 
 ## Step 3 — Setup Firewall
 
