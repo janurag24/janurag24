@@ -85,4 +85,18 @@ sudo systemctl enable apache2
 
 Source - https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-debian-9
 
-## Step 5 — Issue Troubleshooting
+## Step 5 — Finetuning + Config Changes
+
+### Change Listening Port
+
+CentOS/Fedora:
+```sh
+$ sudo vi /etc/httpd/conf/httpd.conf
+```
+
+Ubuntu/Debian:
+```sh
+$ sudo vi /etc/apache2/ports.conf
+```
+
+## Step 6 — Issue Troubleshooting
